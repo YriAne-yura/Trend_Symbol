@@ -1,12 +1,20 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang Web của Tôi</title>
+    <title>Character Converter</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Chào mừng bạn đến với GitHub Pages!</h1>
-    <p>Trang web này đang chạy trên GitHub Pages.</p>
+    <h2>Symbol</h2>
+    <input type="text" id="inputText" placeholder="Enter text..." oninput="convertText()">
+    <div id="output" onclick="copyToClipboard()" title="Click to copy"></div>
+    <div class="buttons">
+        <button onclick="setMode('convert')">Convert</button>
+        <button onclick="setMode('translate')">Translate</button>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
